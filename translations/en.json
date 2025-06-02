@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Hoymiles Modbus TCP Setup",
+        "description": "Thank you for installing the Hoymiles Modbus TCP integration! To find the DTU IP, check your router's connected devices or use a network scanning tool.",
+        "data": {
+          "dtu_ip": "DTU IP Address",
+          "dtu_port": "DTU Port (default: 502)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to DTU. Please check the IP address and port."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Hoymiles Modbus TCP Options",
+        "description": "Update your DTU connection settings.",
+        "data": {
+          "dtu_ip": "DTU IP Address",
+          "dtu_port": "DTU Port (default: 502)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to DTU. Please check the IP address and port."
+    }
+  }
+}
