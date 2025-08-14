@@ -30,9 +30,9 @@ class HoymilesDtuClient:
                 host=self.host,
                 port=self.port,
                 timeout=self.connection_timeout,
-                retry_on_empty=self.retry_on_empty,
-                retries=self.retries,
-                delay_on_connect=self.delay_on_connect
+#                retry_on_empty=self.retry_on_empty,
+                retries=self.retries
+#                delay_on_connect=self.delay_on_connect
             )
         
         if not self.client.connected:
@@ -89,7 +89,7 @@ class HoymilesDtuClient:
             # Add small delay between requests to avoid overwhelming DTU
             await asyncio.sleep(0.1)
             
-            result = await self.client.read_holding_registers(address, count)
+            result = await self.client.read_holding_registers(address, count=count)
             
             if result.isError():
                 raise ModbusException(f"Error reading address {hex(address)}: {result}")

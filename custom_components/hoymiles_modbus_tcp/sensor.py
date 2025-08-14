@@ -64,7 +64,7 @@ class HoymilesStationPowerSensor(SensorEntity):
         _LOGGER.debug(f"Fetching current power for station {self._sid}")
         power = await self._client.get_total_power()
         _LOGGER.debug(f"Received power data for station {self._sid}: {power/1000} kW")
-        self._state = float(power/1000)
+        self._state = float(power)
 
 
 class HoymilesStationDailyEnergySensor(SensorEntity):
