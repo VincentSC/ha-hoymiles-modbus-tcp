@@ -2,9 +2,9 @@
   "domain": "hoymiles_modbus_tcp",
   "name": "Hoymiles Modbus TCP",
   "version": "0.1.0",
-  "documentation": "https://github.com/yourusername/hoymiles_modbus_tcp",
+  "documentation": "https://github.com/wil-lem/ha-hoymiles-modbus-tcp?tab=readme-ov-file#hoymiles-modbus-tcp-integration-for-home-assistant",
   "dependencies": [],
-  "codeowners": ["@yourgithubusername"],
+  "codeowners": ["@wil-lem"],
   "requirements": ["Pymodbus", "PyYAML"],
   "iot_class": "cloud_push",
   "config_flow": true
